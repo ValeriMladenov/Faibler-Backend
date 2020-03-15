@@ -57,11 +57,13 @@ module.exports = {
           .reduce(function(obj, key) {
             return Regions[key];
           }, {});
-        if (ReportData.photo === "") {
-          sendReportWithoutPhoto(ReportData, Region);
-        } else {
-          sendReportWithPhoto(ReportData, Region);
-        }
+        sendReportWithoutPhoto(ReportData, Region);
+        // cause of upload problem, photo will be avaible soon
+        // if (ReportData.photo === "") {
+        //   sendReportWithoutPhoto(ReportData, Region);
+        // } else {
+        //   sendReportWithPhoto(ReportData, Region);
+        // }
       }
       return "success";
     },
