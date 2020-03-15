@@ -1,0 +1,12 @@
+/node_modules
+/test_api
+.env
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/sms-bakend.iml
+.idea/vcs.xml
+package-lock.json
+.DS_Store
