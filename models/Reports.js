@@ -5,7 +5,7 @@ const { ObjectId } = Schema.Types;
 const ReportSchema = new Schema({
   reporter: { required: true, type: ObjectId },
   name: { required: true, type: String, default: "" },
-  place: { required: true, type: String, default: "" },
+  region: { required: true, type: String, default: "" },
   address: { required: true, type: String, default: "" },
   photo: { required: false, type: String, default: "" },
   description: { required: true, type: String, default: "" },

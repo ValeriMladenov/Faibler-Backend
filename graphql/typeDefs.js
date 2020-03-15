@@ -8,13 +8,14 @@ module.exports = gql`
     phone: String!
   }
   input newReportInput {
-    place: String!
+    region: String!
     name: String!
     address: String!
     description: String!
     photo: String!
   }
   type Region {
+    id: String!
     name: String!
     email: String!
   }

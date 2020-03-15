@@ -7,7 +7,7 @@ module.exports = {
   Mutation: {
     newReport: async (
       _,
-      { newReportInput: { place, name, address, description, photo } },
+      { newReportInput: { region, name, address, description, photo } },
       context
     ) => {
       const { user } = getAuthenticatedUser(context);
@@ -27,7 +27,7 @@ module.exports = {
           reporter: savedUser._id,
           name,
           address,
-          place,
+          region,
           description,
           photo,
         });
@@ -37,7 +37,7 @@ module.exports = {
           reporter: registerUser._id,
           name,
           address,
-          place,
+          region,
           description,
           photo,
         });
