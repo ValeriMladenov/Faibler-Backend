@@ -1,5 +1,10 @@
 const Report = require("../../models/Reports");
 const User = require("../../models/User");
+const Regions = require("../../config/regions.json");
+const {
+  sendReportWithoutPhoto,
+  sendReportWithPhoto,
+} = require("../../util/mails/sendReport");
 const getAuthenticatedUser = require("../middlewares/authenticated");
 
 module.exports = {
@@ -7,7 +12,7 @@ module.exports = {
   Mutation: {
     newReport: async (
       _,
-      { newReportInput: { place, name, address, description, photo } },
+      { newReportInput: { region, name, address, description, photo } },
       context
     ) => {
       const { user } = getAuthenticatedUser(context);
@@ -27,7 +32,7 @@ module.exports = {
           reporter: savedUser._id,
           name,
           address,
-          place,
+          region,
           description,
           photo,
         });
@@ -37,11 +42,26 @@ module.exports = {
           reporter: registerUser._id,
           name,
           address,
-          place,
+          region,
           description,
           photo,
         });
-        await newReport.add();
+        const savedReport = await newReport.add();
+        const ReportData = await Report.findOne({
+          _id: savedReport._id,
+        }).populate("reporter");
+        const Region = Object.keys(Regions)
+          .filter(function(key) {
+            return Regions[key].name === ReportData.region;
+          })
+          .reduce(function(obj, key) {
+            return Regions[key];
+          }, {});
+        if (ReportData.photo === "") {
+          sendReportWithoutPhoto(ReportData, Region);
+        } else {
+          sendReportWithPhoto(ReportData, Region);
+        }
       }
       return "success";
     },

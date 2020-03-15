@@ -1,0 +1,40 @@
+[
+  { "id": "1", "name": "Благоевград", "email": "rzibl@rzibl.org" },
+  { "id": "2", "name": "Бургас", "email": "rzi@rzi-burgas.com" },
+  { "id": "3", "name": "Варна", "email": "office@rzi-varna.com" },
+  { "id": "4", "name": "Велико Търново", "email": "rzi-vt@rzi-vt.bg" },
+  { "id": "5", "name": "Видин", "email": "rzi-vidin@mh.government.bg" },
+  { "id": "6", "name": "Враца", "email": "rzi@rzi-vratsa.com" },
+  { "id": "7", "name": "Габрово", "email": "gabrovo@rzi-gbr.org" },
+  { "id": "8", "name": "Добрич", "email": "rzi-dobrich@mh.government.bg" },
+  { "id": "9", "name": "Кърджали", "email": " rzi.kardjali@gmail.com" },
+  { "id": "10", "name": "Кюстендил", "email": "rzi@rzi-kn.net" },
+  { "id": "11", "name": "Ловеч", "email": "rzi@rzi-lovech.bg" },
+  { "id": "12", "name": "Монтана", "email": "rzi-montana@net- surf.net" },
+  { "id": "13", "name": "Пазарджик", "email": "rzipz@mail.bg" },
+  { "id": "14", "name": "Перник", "email": "rzi_pk@b-trust.org" },
+  { "id": "15", "name": "Плевен", "email": " rzi@rzi-pleven.com" },
+  { "id": "16", "name": "Пловдив", "email": " rzipd@plov.net" },
+  { "id": "17", "name": "Разград", "email": "rzi_razgrad@mbox.contact.bg" },
+  { "id": "18", "name": "Русе", "email": "rzi@rzi-ruse.com" },
+  { "id": "19", "name": "Силистра", "email": "info@rzi-silistra.com" },
+  { "id": "20", "name": "Сливен", "email": "rzi-sliven@mbox.contact.bg" },
+  { "id": "21", "name": "Смолян", "email": "rzi@rzi-smolyan.com" },
+  { "id": "22", "name": "Софийска област", "email": "rzi_so@rzi-sfo.bg" },
+  { "id": "23", "name": "София", "email": "director@srzi.bg" },
+  {
+    "id": "24",
+    "name": "Стара Загора",
+    "email": "rzi-stara_zagora@mh.government.bg"
+  },
+  {
+    "id": "25",
+    "name": "Търговище",
+    "email": " rzi-targovishte@mh.government.bg"
+  },
+  { "id": "26", "name": "Хасково", "email": "rzi@haskovo.net" },
+  { "id": "27", "name": "Шумен", "email": "office@rzi-shumen.net" },
+  { "id": "28", "name": "Ямбол", "email": "rzi-yambol@mbox.contact.bg" },
+  { "id": "29", "name": "Тест", "email": "work@valeri.ml" }
+
+]
