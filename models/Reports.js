@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const { ObjectId } = Schema.Types;
 const ReportSchema = new Schema({
-  reporter: { required: true, type: ObjectId },
+  reporter: { type: ObjectId, required: true, ref: "User" },
   name: { required: true, type: String, default: "" },
   region: { required: true, type: String, default: "" },
   address: { required: true, type: String, default: "" },

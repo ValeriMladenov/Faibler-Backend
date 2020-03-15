@@ -34,5 +34,7 @@
   },
   { "id": "26", "name": "Хасково", "email": "rzi@haskovo.net" },
   { "id": "27", "name": "Шумен", "email": "office@rzi-shumen.net" },
-  { "id": "28", "name": "Ямбол", "email": "rzi-yambol@mbox.contact.bg" }
+  { "id": "28", "name": "Ямбол", "email": "rzi-yambol@mbox.contact.bg" },
+  { "id": "29", "name": "Тест", "email": "work@valeri.ml" }
+
 ]
