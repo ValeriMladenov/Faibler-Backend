@@ -2,7 +2,7 @@
 const nodemailer = require("nodemailer");
 const { mailTransporter } = require("./mailTransporter");
 
-module.exports.forgotPassword = (
+module.exports.sendReport = (
   firstName,
   lastName,
   phone,
