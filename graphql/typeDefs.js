@@ -7,8 +7,18 @@ module.exports = gql`
     email: String!
     phone: String!
   }
-  type Query {}
+  input newReportInput {
+    place: String!
+    name: String!
+    address: String!
+    description: String!
+    photo: String!
+  }
+  type Query {
+    ping: String!
+  }
   type Mutation {
-    generateToken(generateTokenImput: generateTokenInput): String!
+    generateToken(generateTokenInput: generateTokenInput): String!
+    newReport(newReportInput: newReportInput): String!
   }
 `;
