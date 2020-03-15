@@ -23,7 +23,7 @@ const sendReportWithPhoto = (ReportData, Region) => {
     <p style="text-align: left;">Във връзка с изпълнението на Заповед №РД-01-124/13.03.2020 на Министъра на Здравеопазването. Желая да подам сигнал за извършено нарушение на заповедта. На ${DateNow}, установих, че на адрес: ${ReportData.address} се намира обект с име ${ReportData.name}, което извършва дейност въпреки забраните в заповедта.</p>
     
     <p style="text-align: right;">С уважение ${ReportData.reporter.firstName} ${ReportData.reporter.lastName}</p>
-<p style="text-align: center;">Това е автоматично генерирано съобщение чрез Faibler.com</p>`,
+<p style="text-align: center;">Това е автоматично генерирано съобщение чрез Faibler.com Faiber не носи отговорност за невярна и грешно подадена информация.</p>`,
     attachments: [{ filename: "report_photo.jpg", path: ReportData.photo }],
   };
 
@@ -50,7 +50,7 @@ const sendReportWithoutPhoto = (ReportData, Region) => {
     <p style="text-align: left;">Във връзка с изпълнението на Заповед №РД-01-124/13.03.2020 на Министъра на Здравеопазването. Желая да подам сигнал за извършено нарушение на заповедта. На ${DateNow}, установих, че на адрес: ${ReportData.address} се намира обект с име ${ReportData.name}, което извършва дейност въпреки забраните в заповедта.</p>
     
     <p style="text-align: right;">С уважение ${ReportData.reporter.firstName} ${ReportData.reporter.lastName}</p>
-<p style="text-align: center;">Това е автоматично генерирано съобщение чрез Faibler.com</p>`,
+<p style="text-align: center;">Това е автоматично генерирано съобщение чрез Faibler.com. Faiber не носи отговорност за невярна и грешно подадена информация.</p>`,
   };
 
   // eslint-disable-next-line consistent-return
