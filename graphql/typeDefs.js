@@ -14,8 +14,13 @@ module.exports = gql`
     description: String!
     photo: String!
   }
+  type Region {
+    name: String!
+    email: String!
+  }
   type Query {
     ping: String!
+    getAllRegions: [Region]
   }
   type Mutation {
     generateToken(generateTokenInput: generateTokenInput): String!
