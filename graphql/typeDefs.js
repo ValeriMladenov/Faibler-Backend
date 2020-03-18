@@ -12,7 +12,6 @@ module.exports = gql`
     name: String!
     address: String!
     description: String!
-    photo: String!
   }
   type Region {
     id: String!
