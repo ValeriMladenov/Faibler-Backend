@@ -1,7 +1,4 @@
 const jwt = require("jsonwebtoken");
-const props = require("../../config/properties");
-
-const secret = props.JWT_SECRET;
 
 module.exports = {
   Query: {},
@@ -17,7 +14,7 @@ module.exports = {
           email,
           phone,
         },
-        secret,
+        process.env.JWT_SECRET,
         {
           expiresIn: 604800,
         }

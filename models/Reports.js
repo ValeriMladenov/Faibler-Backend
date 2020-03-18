@@ -7,7 +7,6 @@ const ReportSchema = new Schema({
   name: { required: true, type: String, default: "" },
   region: { required: true, type: String, default: "" },
   address: { required: true, type: String, default: "" },
-  photo: { required: false, type: String, default: "" },
   description: { required: true, type: String, default: "" },
 });
 
