@@ -1,8 +1,7 @@
 /* eslint-disable no-console */
 const mongoose = require("mongoose");
-const props = require("./properties");
 
-const db = props.DB_URL;
+const db = process.env.DB_URL;
 
 const connectDB = async () => {
   try {
