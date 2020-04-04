@@ -20,4 +20,4 @@ const server = new ApolloServer({
 server.listen(port).then(({ url }) => {
   console.log(`Server ready at ${url}`);
 });
-console.log(`OneTap Backend ready...`);
+console.log(`Faibler Backend ready...`);
