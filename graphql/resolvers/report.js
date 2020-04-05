@@ -35,10 +35,10 @@ module.exports = {
         _id: newUserReport._id,
       }).populate("reporter");
       const Region = Object.keys(Regions)
-        .filter(function(key) {
+        .filter(function (key) {
           return Regions[key].name === ReportData.region;
         })
-        .reduce(function(obj, key) {
+        .reduce(function (obj, key) {
           return Regions[key];
         }, {});
       sendReport(ReportData, Region);
