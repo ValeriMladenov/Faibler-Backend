@@ -1,7 +1,6 @@
 const { mailTransporter } = require("./mailTransporter");
 
-const DateObj = new Date();
-const DateNow = DateObj.toLocaleDateString("bg-BG");
+const DateNow = new Date().toLocaleDateString("bg-BG");
 
 const sendReport = (ReportData, Region) => {
   const transporter = mailTransporter();
